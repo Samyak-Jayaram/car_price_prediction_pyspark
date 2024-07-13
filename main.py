@@ -34,7 +34,7 @@ class CarPricePredictionGUI:
                 "Manufacturer_BMW", "Manufacturer_Audi"
             ]
 
-        title_label = tk.Label(self.master, text="Used Car Price Prediction", font=('Times New Roman', 30, 'bold'))
+        title_label = tk.Label(self.master, text="Used Car Price Prediction", font=('Times New Roman', 29, 'bold'))
         title_label.grid(row=0, column=4, columnspan=6, pady=20)
 
 
@@ -287,7 +287,7 @@ class CarPricePredictionGUI:
             table_window = tk.Toplevel(self.master)
             table_window.title("Top 20 Predictions")
 
-            # Define style
+
             style = ttk.Style()
             style.configure("Treeview", font=("Times New Roman", 18))
             style.configure("Treeview.Heading", font=("Times New Roman", 18, "bold"))
