@@ -385,14 +385,14 @@ class CarPricePredictionGUI:
         style.configure("Treeview", rowheight=40)
 
         table = ttk.Treeview(table_window, columns=("Field", "Importance"), show="headings")
-        table.heading("Field", text="Parameter")
-        table.heading("Importance", text="Importance")
+        table.heading("Field", text="\tParameter")
+        table.heading("Importance", text="\tImportance")
         table.pack(fill=tk.BOTH, expand=True)
 
         for index, row in feature_importances.iterrows():
             parameter = index
             importance = row['Importance']
-            table.insert("", "end", values=(parameter, f"{importance:.4f}"))
+            table.insert("", "end", values=(f"\t\t\t\t{parameter}", f"\t\t\t\t{importance:.4f}"))
 
 
     def corr_matrix(self):
