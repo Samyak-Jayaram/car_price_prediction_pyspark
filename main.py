@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import  ttk, messagebox
+from tkinter import ttk, messagebox
 import traceback
 from pyspark.sql import SparkSession
 from pyspark.ml.regression import GBTRegressionModel
